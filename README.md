@@ -1,4 +1,4 @@
-# Assignment 3:
+# Assignment
 
 ## Project Description
 This project implements a Graph data structure using an **Adjacency List**. It includes implementations of two primary traversal algorithms:
