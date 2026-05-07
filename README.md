@@ -36,3 +36,6 @@ This project implements a graph-based system using Java. It represents a graph s
 3.  **Traversal Order:** BFS produced a "wider" search order, while DFS followed a linear path (0-1-2-3...).
 4.  **Preference:** BFS is preferred for shortest paths; DFS is preferred when memory is limited or we need to visit every node deeply.
 5.  **DFS Limitations:** Can lead to `StackOverflowError` on extremely deep graphs due to recursion limits.
+
+
+## Reflection During this assignment, I learned how graphs can be represented using an adjacency list. I understood that a graph consists of vertices and edges, and that each vertex can store a list of its neighboring vertices. This helped me understand why an adjacency list is useful for graph traversal. I also learned the difference between BFS and DFS. BFS uses a queue and visits vertices level by level, while DFS uses recursion and explores one path deeply before backtracking. One challenge I faced was organizing Java classes correctly and making sure each public class was placed in its own file. 
