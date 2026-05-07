@@ -26,4 +26,17 @@ public class Experiment {
         endTime = System.nanoTime();
         System.out.println("DFS time: " + (endTime - startTime) + " ns");
     }
+
+    // overloaded method
+    public void runTraversals(Graph g) {
+        runTraversals(g, 0, true);
+    }
+
+    public void runMultipleTests() {
+        System.out.println("Multiple tests are executed from Main.java.");
+    }
+
+    public void printResults() {
+        System.out.println("BFS and DFS traversal experiments completed.");
+    }
 }

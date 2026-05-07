@@ -18,7 +18,8 @@ public class Main {
         Graph large = createGraph(100);
         exp.runTraversals(large, 0, false);
 
-        }
+        exp.printResults();
+    }
 
     private static Graph createGraph(int size) {
         Graph g = new Graph();
