@@ -33,10 +33,10 @@ public class Experiment {
     }
 
     public void runMultipleTests() {
-        System.out.println("Multiple tests are executed from Main.java.");
+        System.out.println("Multiple tests are executed from Main.java for 10, 30, and 100 vertices");
     }
 
     public void printResults() {
-        System.out.println("BFS and DFS traversal experiments completed.");
+        System.out.println("BFS and DFS experiments were completed.");
     }
 }
