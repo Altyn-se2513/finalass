@@ -7,7 +7,7 @@ public class Vertex {
     public int getId() {
         return id;
     }
-
+    @Override
     public String toString() {
         return "Vertex" + id;
     }

@@ -12,9 +12,13 @@ public class Graph {
     }
 
     public void addEdge(int from, int to) {
+        adjList.putIfAbsent(from, new ArrayList<>());
+        adjList.putIfAbsent(to, new ArrayList<>());
+
         adjList.get(from).add(to);
-        adjList.get(to).add(from); // неориентированный граф
+        adjList.get(to).add(from);
     }
+
 
     public void printGraph() {
         for (int key : adjList.keySet()) {
