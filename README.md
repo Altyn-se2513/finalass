@@ -40,7 +40,6 @@ This project implements a graph-based system using Java. It represents a graph s
 
 ## Experimental Results
 
-=======
 | Graph Size        |  BFS Time (ns) | DFS Time (ns) | Faster Algorithm |
 |-------------------|----------------:|--------------:|-----------------:|
 | Small (10 nodes)  |         2727600 |        710000 |              DFS |
