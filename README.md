@@ -13,14 +13,30 @@ This project implements a graph-based system using Java. It represents a graph s
 
 ## Algorithm Descriptions
 ### Breadth-First Search (BFS)
-*   **Logic:** Uses a `Queue` to visit vertices in layers.
-*   **Complexity:** $O(V + E)$, where $V$ is vertices and $E$ is edges.
-*   **Use Case:** Finding the shortest path in unweighted graphs.
+* Logic: Uses a Queue to visit vertices in layers.
+* Steps:
+  1. Start from the selected vertex
+  2. Add the vertex to the queue
+  3. Mark the vertex as visited
+  4. Remove a vertex from the queue
+  5. Visit all unvisited neighbors
+  6. Add neighbors to the queue
+  7. Repeat until the queue becomes empty
+* Complexity: O(V + E), where V is vertices and E is edges.
+* Use Case: Finding the shortest path in unweighted graphs.
 
 ### Depth-First Search (DFS)
-*   **Logic:** Uses recursion (system stack) to visit nodes deeply.
-*   **Complexity:** $O(V + E)$.
-*   **Use Case:** Topological sorting, detecting cycles, and solving puzzles.
+* Logic: Uses recursion (system stack) to visit nodes deeply.
+* Steps:
+  1. Start from the selected vertex
+  2. Mark the vertex as visited
+  3. Visit the current vertex
+  4. Move recursively to an unvisited neighbor
+  5. Continue until all vertices are visited
+  6. Backtrack when no unvisited neighbors remain
+* Complexity: O(V + E)
+* Use Case: Topological sorting, detecting cycles, and solving puzzles.
+
 
 ## Experimental Results
 
