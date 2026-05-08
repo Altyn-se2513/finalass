@@ -24,7 +24,7 @@ This project implements a graph-based system using Java. It represents a graph s
 
 ## Experimental Results
 
-| Graph Size        |  BBFS Time (ns) | DFS Time (ns) | Faster Algorithm |
+| Graph Size        |   BFS Time (ns) | DFS Time (ns) | Faster Algorithm |
 |-------------------|----------------:|--------------:|-----------------:|
 | Small (10 nodes)  |         2727600 |        710000 |              DFS |
 | Medium (30 nodes) |         1856500 |     156790000 |              DFS |
@@ -43,6 +43,3 @@ This project implements a graph-based system using Java. It represents a graph s
 ![Screenshot 2](docs/screenshots/img_1.png)
 ![Screenshot 3](docs/screenshots/img_2.png)
 ![Screenshot 4](docs/screenshots/img_3.png)
-
-## Reflection: During this assignment, I learned how graphs can be represented using an adjacency list. I understood that a graph consists of vertices and edges, and that each vertex can store a list of its neighboring vertices. This helped me understand why an adjacency list is useful for graph traversal. I also learned the difference between BFS and DFS. BFS uses a queue and visits vertices level by level, while DFS uses recursion and explores one path deeply before backtracking. One challenge I faced was organizing Java classes correctly and making sure each public class was placed in its own file. 
->>>>>>> 005769ac50d9acff1f844d64a0a3b2b561a0804b

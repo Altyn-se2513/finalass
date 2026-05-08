@@ -35,13 +35,15 @@ public class Graph {
         Set<Integer> visited = new HashSet<>();
         Queue<Integer> queue = new LinkedList<>();
 
-        queue.add(start);
+        // Start traversal from the selected vertex
         visited.add(start);
+        queue.add(start);
 
         while (!queue.isEmpty()) {
             int current = queue.poll();
             System.out.print(current + " ");
 
+            // Visit all neighbors of the current vertex
             for (int neighbor : adjList.get(current)) {
                 if (!visited.contains(neighbor)) {
                     visited.add(neighbor);
@@ -50,21 +52,19 @@ public class Graph {
             }
         }
     }
-
     // DFS
-    public void dfs(int start) {
-        Set<Integer> visited = new HashSet<>();
-        dfsHelper(start, visited);
-    }
+    public void dfs(int vertex, Set<Integer> visited) {
 
-    private void dfsHelper(int current, Set<Integer> visited) {
-        visited.add(current);
-        System.out.print(current + " ");
+        // Mark current vertex as visited
+        visited.add(vertex);
+        System.out.print(vertex + " ");
 
-        for (int neighbor : adjList.get(current)) {
+        // Recursively visit all unvisited neighbors
+        for (int neighbor : adjList.get(vertex)) {
             if (!visited.contains(neighbor)) {
-                dfsHelper(neighbor, visited);
+                dfs(neighbor, visited);
             }
         }
     }
+
 }
