@@ -27,12 +27,12 @@ This project implements a graph-based system using Java. It represents a graph s
 | Graph Size        |  BFS Time (ns) | DFS Time (ns) | Faster Algorithm |
 |-------------------|----------------:|--------------:|-----------------:|
 | Small (10 nodes)  |         2727600 |        710000 |              DFS |
-| Medium (30 nodes) |         1856500 |     156790000 |              DFS |
+| Medium (30 nodes) |         1856500 |       1567900 |              DFS |
 | Large (100 nodes) |         3491200 |       5282800 |              BFS |
 
 ### Analysis (Part 2)
 1.  **Effect of Size:** As the number of vertices increases, execution time grows linearly, which matches $O(V+E)$.
-2.  **Performance:** In my experiment, DFS was faster for smaller graphs due to less overhead, while BFS became more competitive as the graph grew.
+2.  **Performance:** In my experiment, DFS was faster for smaller graphs due to less overhead, while BFS showed better performance in larger graphs
 3.  **Traversal Order:** BFS produced a "wider" search order, while DFS followed a linear path (0-1-2-3...).
 4.  **Preference:** BFS is preferred for shortest paths; DFS is preferred when memory is limited or we need to visit every node deeply.
 5.  **DFS Limitations:** Can lead to `StackOverflowError` on extremely deep graphs due to recursion limits.
